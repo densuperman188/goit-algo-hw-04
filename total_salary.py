@@ -5,7 +5,7 @@ def total_salary(path):
         with open(path, 'r', encoding='utf-8') as file:
             for line in file:
                     name, salary = line.split(',')
-                    salary = int(salary)
+                    salary = float(salary)
                     total += salary
                     count += 1
         average = total / count

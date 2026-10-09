@@ -5,9 +5,9 @@ def get_cats_info(path):
             for line in file:
                 cat_id, name, age = line.split(',')
                 cat = {
-                    'id': int(cat_id),
+                    'id': str(cat_id),
                     'name': name.strip(),
-                    'age': int(age)
+                    'age': str(age)
                 }
             cats.append(cat)
     except FileNotFoundError:
